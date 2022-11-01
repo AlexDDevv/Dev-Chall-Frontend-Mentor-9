@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "Inter4";
+    src: url(../fonts/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: "Inter7";
+    src: url(../fonts/Inter-Bold.ttf);
+}
+@font-face {
+    font-family: "Inter8";
+    src: url(../fonts/Inter-ExtraBold.ttf);
+}
+$font1: Inter4, sans-serif;
+$font2: Inter7, sans-serif;
+$font3: Inter8, sans-serif;
+$body: hsl(36, 100%, 99%);
+$h2: hsl(35, 77%, 62%);
+$btn: hsl(5, 85%, 63%);
+$color1: hsl(233, 8%, 79%);
+$color2: hsl(236, 13%, 42%);
+$color3: hsl(240, 100%, 5%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: $body;
+}
+li {
+    list-style-type: none;
+    font-family: $font1;
+    font-size: 0.9rem;
+    color: $color2;
+    cursor: pointer;
+}
+p {
+    font-family: $font1;
+    font-size: 0.8rem;
+    color: $color2;
+}
+button {
+    background: $btn;
+    border: none;
+    color: $body;
+    font-family: $font2;
+    font-size: 0.65rem;
+    letter-spacing: 4px;
+    padding: 15px 35px;
+    cursor: pointer;
+}
+h3 {
+    font-family: $font2;
+    font-size: 1rem;
+    color: $body;
+}
+h4 {
+    font-family: $font3;
+    font-size: 0.9rem;
+    color: $color3;
+}
+span {
+    font-family: $font2;
+    font-size: 2rem;
+    color: $color1;
+}

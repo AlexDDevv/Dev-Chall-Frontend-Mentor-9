@@ -1,0 +1,21 @@
+main {
+    width: 65%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 67% 33%;
+    gap: 30px;
+    margin-bottom: 60px;
+
+    @media screen and (max-width: 1285.60px) {
+        width: 80%;
+    }
+    @media screen and (max-width: 1120px) {
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+    }
+    @media screen and (max-width: 1120px) {
+        width: 100%;
+        padding: 0 15px;
+    }
+}

@@ -1,0 +1,64 @@
+section {
+    
+    .top {
+        height: 240px;
+        margin-bottom: 25px;
+        background: url(../images/image-web-3-desktop.jpg) center/cover;
+
+        @media screen and (max-width: 630px) {
+            height: 300px;
+            background: url(../images/image-web-3-mobile.jpg) center/cover;
+            margin-bottom: 20px;
+        }
+    }
+    .bot {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width: 650px) {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .tittle {
+            max-width: 305px;
+
+            @media screen and (max-width: 800px) {
+                margin-bottom: 10px;
+            }
+
+            h1 {
+                font-family: $font3;
+                font-size: 3rem;
+                color: $color3;
+                line-height: 48px;
+
+                @media screen and (max-width: 800px) {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+        .text {
+            max-width: 310px;
+
+            p {
+                font-size: 0.85rem;
+                line-height: 20px;
+                margin-bottom: 30px;
+            }
+            button {
+
+                &:active {
+                    background: $color3;
+                    transition: 0.3s;
+                    transform: scale(0.9);
+                }
+                @media screen and (max-width: 650px) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
